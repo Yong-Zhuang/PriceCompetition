@@ -1,180 +1,111 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {
-            height: 450px;
-        }
-
-        /* Set gray background color and 100% height */
-        .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
-            height: 100%;
-        }
-
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
-
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
-        }
-    </style>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Modern Business - Start Bootstrap Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-
-    <div class="navbar navbar-default navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a href="../" class="navbar-brand">Bootswatch</a>
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" style="width:135px;background:url('images/sale.jpg') 0px -20px;" href="index.html"></a>
             </div>
-            <div class="navbar-collapse collapse" id="navbar-main">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-                        <ul class="dropdown-menu" aria-labelledby="themes">
-                            <li><a href="../default/">Default</a></li>
-                            <li class="divider"></li>
-                            <li><a href="../cerulean/">Cerulean</a></li>
-                            <li><a href="../cosmo/">Cosmo</a></li>
-                            <li><a href="../cyborg/">Cyborg</a></li>
-                            <li><a href="../darkly/">Darkly</a></li>
-                            <li><a href="../flatly/">Flatly</a></li>
-                            <li><a href="../journal/">Journal</a></li>
-                            <li><a href="../lumen/">Lumen</a></li>
-                            <li><a href="../paper/">Paper</a></li>
-                            <li><a href="../readable/">Readable</a></li>
-                            <li><a href="../sandstone/">Sandstone</a></li>
-                            <li><a href="../simplex/">Simplex</a></li>
-                            <li><a href="../slate/">Slate</a></li>
-                            <li><a href="../spacelab/">Spacelab</a></li>
-                            <li><a href="../superhero/">Superhero</a></li>
-                            <li><a href="../united/">United</a></li>
-                            <li><a href="../yeti/">Yeti</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../help/">Help</a>
-                    </li>
-                    <li>
-                        <a href="http://news.bootswatch.com">Blog</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Paper <span class="caret"></span></a>
-                        <ul class="dropdown-menu" aria-labelledby="download">
-                            <li><a href="http://jsfiddle.net/bootswatch/ndax7sh7/">Open Sandbox</a></li>
-                            <li class="divider"></li>
-                            <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
-                            <li><a href="./bootstrap.css">bootstrap.css</a></li>
-                            <li class="divider"></li>
-                            <li><a href="./variables.less">variables.less</a></li>
-                            <li><a href="./bootswatch.less">bootswatch.less</a></li>
-                            <li class="divider"></li>
-                            <li><a href="./_variables.scss">_variables.scss</a></li>
-                            <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-                    <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
-                </ul>
-
-            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse -->
         </div>
-    </div>
-
+        <!-- /.container -->
+    </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                     
+                    <small>Price Competition</small>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Sidebar Column -->
+            <div class="col-md-3">
 
-        <div class="page-header" id="banner">
-            <div class="row">
-                <div class="col-lg-8 col-md-7 col-sm-6">
-                    <h1>Paper</h1>
-                    <p class="lead">Material is the metaphor</p>
+                <div class="list-group">
+                    <a href="index.html" class="list-group-item">Electronics</a>
+                    <a href="about.html" class="list-group-item">Home & Garden</a>
+                    <a href="services.html" class="list-group-item">Women's Fashion</a>
+                    <a href="contact.html" class="list-group-item">Men's Fashion</a>
+                    <a href="portfolio-1-col.html" class="list-group-item">Baby, Kid & Toys</a>
+                    <a href="portfolio-2-col.html" class="list-group-item">Jewelry & Watches</a>
+                    <a href="portfolio-3-col.html" class="list-group-item">Health & Beauty</a>
+                    <a href="portfolio-4-col.html" class="list-group-item">Sports & Outdoors</a>
+                    <a href="portfolio-item.html" class="list-group-item">Grocery, Alcohol & Tobacco</a>
+                    <a href="blog-home-1.html" class="list-group-item">Entertainment</a>
+                    <a href="blog-home-2.html" class="list-group-item">Auto & Home Improvement</a>
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-6">
-                    <div class="sponsor">
-                        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=bootswatchcom" id="_carbonads_js"></script>
+            </div>
+            <div class="col-md-9" style="background:white">
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src="http://ecx.images-amazon.com/images/I/51nBVPTA4zL._SL1300_.jpg" alt="">
+                        <div class="caption">
+                            <h3>Philips Sonicare DiamondClean Sonic Electric Rechargeable Toothbrush, Pink, HX9362/68</h3>
+                            <p>Taking care of your oral health is easy with the Philips Sonicare DiamondClean toothbrush. This rechargeable power toothbrush offers Sonicare's best plaque removal and whitening system, featuring patented sonic technology and brush heads with diamond-shaped bristles that gently brush away plaque. Five cleaning modes provide a custom cleaning experience, and the smartimer and quadpacer ensure you brush adequately and evenly. For your convenience, DiamondClean includes a sleek charging glass and a USB charging travel case.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary">Pre-order!</a> <i class="fa fa-usd"></i> 189 <i class="fa fa-long-arrow-down"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="http://ecx.images-amazon.com/images/I/6103H2tBZJL._SL1010_.jpg" alt="">
+                        <div class="caption">
+                            <h3>iRobot Roomba 980 Vacuum Cleaning Robot</h3>
+                            <p>Roomba 980 delivers the power to help you with the vacuuming, so you can tackle the rest of what life throws your way. Smart navigation allows Roomba 980 to clean an entire level of your home, recharging as needed until the job is done. Use with the iRobot HOME App to conveniently clean and schedule - anytime, from anywhere. The powerful AeroForce Cleaning System with Carpet Boost automatically provides up to 10x the air power on carpets and rugs, where dirt and dust hide. Roomba works on all floor types and at just 3.6" tall, is specifically designed to fit under most furniture, beds and kickboards.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary">Pre-order!</a> <i class="fa fa-usd"></i> 899 <i class="fa fa-long-arrow-down"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="http://ecx.images-amazon.com/images/I/71ACyUsXCQL._SL1368_.jpg" alt="">
+                        <div class="caption">
+                            <h3>Estee Lauder 'Anti-Wrinkle' Set</h3>
+                            <p>Estee Lauder Advanced Night Repair 1.oz / 30 ml Anti-Wrinkle And Eye Trio Gift Set. Includes: (1) Estée Lauder Advanced Night Repair Synchronized Recovery Complex II, 1 oz / 30 ml, (1) Estée Lauder Advanced Time Zone Creme SPF 15 0.5 oz / 15 ml AND (1) Estée Lauder Advanced Time Zone Eye Creme 0.17 oz / 5 ml.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary">Pre-order!</a> <i class="fa fa-usd"></i> 82 <i class="fa fa-long-arrow-down"></i>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                    <div class="list-group table-of-contents">
-                        <a class="list-group-item" href="#navbar">Navbar</a>
-                        <a class="list-group-item" href="#buttons">Buttons</a>
-                        <a class="list-group-item" href="#typography">Typography</a>
-                        <a class="list-group-item" href="#tables">Tables</a>
-                        <a class="list-group-item" href="#forms">Forms</a>
-                        <a class="list-group-item" href="#navs">Navs</a>
-                        <a class="list-group-item" href="#indicators">Indicators</a>
-                        <a class="list-group-item" href="#progress-bars">Progress bars</a>
-                        <a class="list-group-item" href="#containers">Containers</a>
-                        <a class="list-group-item" href="#dialogs">Dialogs</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
-        <div class="container-fluid text-center">
-            <div class="row content">
-                <div class="col-sm-2 sidenav">
-                    <p><a href="#">Link</a></p>
-                    <p><a href="#">Link</a></p>
-                    <p><a href="#">Link</a></p>
-                </div>
-                <div class="col-sm-8 text-left">
-                    <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <hr>
-                    <h3>Test</h3>
-                    <p>Lorem ipsum...</p>
-                </div>
-                <div class="col-sm-2 sidenav">
-                    <div class="well">
-                        <p>ADS</p>
-                    </div>
-                    <div class="well">
-                        <p>ADS</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="container-fluid text-center">
-            <p>Footer Text</p>
-        </footer>
-
 </body>
 </html>
