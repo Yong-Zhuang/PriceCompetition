@@ -25,7 +25,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index:1;" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -35,39 +35,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               
+
                 <a class="navbar-brand" style="width:135px;background:url('images/sale.jpg') 0px -20px;" href="index.html"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li>
                         <a href="index.html">Upcoming Deals</a>
                     </li>
                     <li class="active">
                         <a href="current.html">Current Deals</a>
                     </li>
                     <li>
-                        <a href="services.html">Groups</a>
+                        <a href="groups.html">Groups</a>
                     </li>
                     <li>
-                        <a href="contact.html">Your Groups</a>
+                        <a href="my_orders.html">Your Orders</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Your Pre-Orders <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li style="right:0px; position:absolute; color:white; ">Hi ! <span id="login"><a href="login.html?keepThis=true&TB_iframe=false&height=270&width=700" title="Log in" class="thickbox btn-xs btn-link">Sign in</a> or <a href="signup.html?keepThis=true&TB_iframe=false&height=350&width=700" title="Register" class="thickbox btn-xs btn-link">Register</a></span><input id="btnLogoff" class="hidden btn-sm btn-info spaceLeft" type="button" onclick="$.get(callbackUrl + '?query=logoff', logoffCallback);" value="Log Off" class="btn-sm btn-info spaceLeft" /></li>
+                    <li style="right:0px; position:absolute; color:white; ">Hi ! <span id="login"><a href="login.html?keepThis=true&TB_iframe=false&height=270&width=700" title="Log in" class="thickbox btn-xs btn-link">Sign in</a> or <a href="signup.html?keepThis=true&TB_iframe=false&height=570&width=700" title="Register" class="thickbox btn-xs btn-link">Register</a></span><input id="btnLogoff" class="hidden btn-sm btn-info spaceLeft" type="button" onclick="$.get(callbackUrl + '?query=logoff', logoffCallback);" value="Log Off" class="btn-sm btn-info spaceLeft" /></li>
 
                 </ul>
             </div>
@@ -89,89 +75,85 @@
 
                 <div class="list-group">
                     <a href="index.html" class="list-group-item">Electronics</a>
-                    <a href="about.html" class="list-group-item">Home & Garden</a>
-                    <a href="services.html" class="list-group-item">Women's Fashion</a>
-                    <a href="contact.html" class="list-group-item">Men's Fashion</a>
-                    <a href="portfolio-1-col.html" class="list-group-item">Baby, Kid & Toys</a>
-                    <a href="portfolio-2-col.html" class="list-group-item">Jewelry & Watches</a>
-                    <a href="portfolio-3-col.html" class="list-group-item">Health & Beauty</a>
-                    <a href="portfolio-4-col.html" class="list-group-item">Sports & Outdoors</a>
-                    <a href="portfolio-item.html" class="list-group-item">Grocery, Alcohol & Tobacco</a>
-                    <a href="blog-home-1.html" class="list-group-item">Entertainment</a>
-                    <a href="blog-home-2.html" class="list-group-item">Auto & Home Improvement</a>
+                    <a href="index.html" class="list-group-item">Home & Garden</a>
+                    <a href="index.html" class="list-group-item">Women's Fashion</a>
+                    <a href="index.html" class="list-group-item">Men's Fashion</a>
+                    <a href="index.html" class="list-group-item">Baby, Kid & Toys</a>
+                    <a href="index.html" class="list-group-item">Jewelry & Watches</a>
+                    <a href="index.html" class="list-group-item">Health & Beauty</a>
+                    <a href="index.html" class="list-group-item">Sports & Outdoors</a>
+                    <a href="index.html" class="list-group-item">Grocery, Alcohol & Tobacco</a>
+                    <a href="index.html" class="list-group-item">Entertainment</a>
+                    <a href="index.html" class="list-group-item">Auto & Home Improvement</a>
                 </div>
             </div>
             <div class="col-md-9" style="background:white;">
                 <div class="col-md-4 col-sm-6 ">
-                    <a href="index.html">
-                        <div class="thumbnail">
-                            <img style="height:200px" src="http://ecx.images-amazon.com/images/I/51nBVPTA4zL._SL1300_.jpg" alt="">
-                            <div class="caption">
-                                <h5 style="height:50px;">Philips Sonicare DiamondClean Sonic Electric Rechargeable Toothbrush, Pink, HX9362/68</h5>
-                                <p class="hidden">Taking care of your oral health is easy with the Philips Sonicare DiamondClean toothbrush. This rechargeable power toothbrush offers Sonicare's best plaque removal and whitening system, featuring patented sonic technology and brush heads with diamond-shaped bristles that gently brush away plaque. Five cleaning modes provide a custom cleaning experience, and the smartimer and quadpacer ensure you brush adequately and evenly. For your convenience, DiamondClean includes a sleek charging glass and a USB charging travel case.</p>
-                                <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Let's play!    <span class="badge"><i class="fa fa-usd"></i>119</span></a>   <i class="fa fa-usd"></i>219.99   <i class="fa fa-long-arrow-down"></i></p>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <a href="index.html">
-                        <div class="thumbnail">
-                            <img style="height:200px" src="http://ecx.images-amazon.com/images/I/6103H2tBZJL._SL1010_.jpg" alt="">
-                            <div class="caption">
-                                <h5 style="height:50px;">iRobot Roomba 980 Vacuum Cleaning Robot</h5>
-                                <p class="hidden">Roomba 980 delivers the power to help you with the vacuuming, so you can tackle the rest of what life throws your way. Smart navigation allows Roomba 980 to clean an entire level of your home, recharging as needed until the job is done. Use with the iRobot HOME App to conveniently clean and schedule - anytime, from anywhere. The powerful AeroForce Cleaning System with Carpet Boost automatically provides up to 10x the air power on carpets and rugs, where dirt and dust hide. Roomba works on all floor types and at just 3.6" tall, is specifically designed to fit under most furniture, beds and kickboards.</p>
-                                <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Let's play!    <span class="badge"><i class="fa fa-usd"></i>750</span></a>   <i class="fa fa-usd"></i>899   <i class="fa fa-long-arrow-down"></i></p>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <a href="index.html">
-                        <div class="thumbnail">
-                            <img style="height:200px" src="http://ecx.images-amazon.com/images/I/71ACyUsXCQL._SL1368_.jpg" alt="">
-                            <div class="caption">
-                                <h5 style="height:50px;">Estee Lauder 'Anti-Wrinkle' Set</h5>
-                                <p class="hidden">Estee Lauder Advanced Night Repair 1.oz / 30 ml Anti-Wrinkle And Eye Trio Gift Set. Includes: (1) Estée Lauder Advanced Night Repair Synchronized Recovery Complex II, 1 oz / 30 ml, (1) Estée Lauder Advanced Time Zone Creme SPF 15 0.5 oz / 15 ml AND (1) Estée Lauder Advanced Time Zone Eye Creme 0.17 oz / 5 ml.</p>
-                                <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Let's play!    <span class="badge"><i class="fa fa-usd"></i>65</span></a>   <i class="fa fa-usd"></i>92   <i class="fa fa-long-arrow-down"></i></p>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 hero-feature">
-                    <a href="index.html">
-                        <div class="thumbnail">
-                            <img style="height:200px" src="http://ecx.images-amazon.com/images/I/71M%2BFTTVopL._SL1500_.jpg" alt="">
-                            <div class="caption">
-                                <h5 style="height:50px;">Hoover Power Scrub Deluxe Carpet Cleaner, FH50150</h5>
-                                <p class="hidden">Help extend the life of your carpet with the Hoover Power Scrub Deluxe Carpet Cleaner. Designed to clean many carpeted and fabric surfaces in and around your home. Make cleaning a breeze with spill free tanks that are easy to access, easy to fill, empty and clean. The Power Scrub Deluxe features SpinScrub multiple brush system, a rinse option, automatic detergent mixing, a DualV Nozzle for more efficient cleaning and forced heated air for faster drying time.</p>
-                                <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Let's play!    <span class="badge"><i class="fa fa-usd"></i>134</span></a>   <i class="fa fa-usd"></i>219   <i class="fa fa-long-arrow-down"></i></p>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 hero-feature">
                     <div class="thumbnail">
-                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/61WUFciBCVL._SL1500_.jpg" alt="">
+                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/71AojlvQ%2B2L._SY679_.jpg" alt="">
                         <div class="caption">
-                            <h5 style="height:50px;">Microsoft Band 2 - Large</h5>
-                            <p class="hidden">Microsoft Band helps you live healthier by tracking your heart rate, exercise, calorie burn, and sleep quality, and helps you achieve more with email, text, and calendar alerts at a glance. Advanced sensors track data specific to running, biking, and golfing. Technology from Microsoft Health gives you actionable insights based on your data. Works with Windows Phone, Android, and iPhone.*</p>
-                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Let's play!    <span class="badge"><i class="fa fa-usd"></i>174.99</span></a>   <i class="fa fa-usd"></i>249   <i class="fa fa-long-arrow-down"></i></p>
+                            <h5 style="height:50px;">Philips Norelco Electric Shaver 5100 Wet & Dry, S5210/81, with Precision Trimmer</h5>
+                            <p class="hidden">The Shaver 5100 adds speed and comfort to your morning routine. Its MultiPrecision blades raise and cut long and short hairs while shaving heads independently move in 5 directions to ensure close skin contact for a faster and closer shave, even on neck and jaw line.</p>
+                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Comming soon!    <span class="badge"><i class="fa fa-usd"></i>79</span></a></p>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 hero-feature">
                     <div class="thumbnail">
-                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/71W2W7NCGOL._SL1010_.jpg" alt="">
+                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/91DpCeCgSBL._SL1500_.jpg" alt="">
                         <div class="caption">
-                            <h5 style="height:50px;">MechanicalEagle Z-77 RGB Backlit 104 Keys Mechanical Gaming Keyboard with Blue Switches (Black)</h5>
-                            <p class="hidden">Hermes Lite focuses on basic user demand and extends this into the distinct design of the GAMDIAS Hermes Series. The Hermes Lite mechanical keyboard is small but elegant; simple yet powerful and offers enhanced durability and flexibility for all types of gamers. The five-phased backlight and breathing modes provide a more enjoyable gaming experience. Other features including: WASD - Arrow Keys Exchange Mode, 256K Built-In Memory, Windows Key Disable, Key Lock Mode, On-The-Fly Macro Recording and 6 Player Profiles, to name a few. In addition to the unique design of the EREBOS LITE Optical Gaming Mouse, features include: 6 buttons, textured no-slip surface, 7-Color luminance, selectable 800/1200/1600/2000/3500 DPI, and 128K on-board memory.</p>
-                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Let's play!    <span class="badge"><i class="fa fa-usd"></i>69.99</span></a>   <i class="fa fa-usd"></i>169   <i class="fa fa-long-arrow-down"></i></p>
+                            <h5 style="height:50px;">Apple iPhone 6s 64 GB US Warranty Unlocked Cellphone - Retail Packaging (Rose Gold)</h5>
+                            <p class="hidden">Item is in new factory sealed condition. I will only ship within the U.S.</p>
+                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Comming soon!    <span class="badge"><i class="fa fa-usd"></i>799</span></a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/71g%2BI3kALgL._SX522_.jpg" alt="">
+                        <div class="caption">
+                            <h5 style="height:50px;">BURBERRY Brit for Women Eau de Parfum Gift Set</h5>
+                            <p class="hidden">Brit for Women Eau de Parfum is a fresh and elegant fragrance with sharp top notes of crisp green almond, icy pear and Italian lime.</p>
+                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Comming soon!    <span class="badge"><i class="fa fa-usd"></i>79.99</span></a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/91gWgPR6IgL._UL1500_.jpg" alt="">
+                        <div class="caption">
+                            <h5 style="height:50px;">Fantasia Medium Tote Bag</h5>
+                            <p class="hidden">Fantasia m tote with magnetic closure, 2 exterior open pockets, protective feet, dust bag included, made in Romania.</p>
+                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Comming soon!    <span class="badge"><i class="fa fa-usd"></i>299.99</span></a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/61aDS7cDSCL._SL1500_.jpg" alt="">
+                        <div class="caption">
+                            <h5 style="height:50px;">Beats Solo2 Wired On-Ear Headphones - Black</h5>
+                            <p class="hidden">Beats’ most popular headphone has been redesigned from the inside out. With updated and improved acoustics, the Solo2 lets you feel your music with a wider range of sound and enhanced clarity. Streamlined, lightweight, and durable, this compact headphone is more comfortable than ever. Take your music with you wherever you go, with the Solo2.</p>
+                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Comming soon!    <span class="badge"><i class="fa fa-usd"></i>79.99</span></a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img style="height:200px" src="http://ecx.images-amazon.com/images/I/91A1NgsQ0GL._UL1500_.jpg" alt="">
+                        <div class="caption">
+                            <h5 style="height:50px;">Michael Kors Women's MK6324 Ritz Rose Gold-Tone Stainless Steel Watch</h5>
+                            <p class="hidden">
+                                A polished metal and ceramic Michael Kors chronograph watch featuring a date window and 3 subdials. Crystal-accented bezel and markers add luxe detail. Hinged-snap clasp.
+
+                                A two-tone bracelet adds sophistication to the rose gold-tone Michael Kors Ritz watch. The textured dial features three sub dials and a crystal top ring and indexes.
+                            </p>
+                            <p style="margin-top :20px;"><a href="#" class="btn btn-primary">Comming soon!    <span class="badge"><i class="fa fa-usd"></i>249.99</span></a></p>
 
                         </div>
                     </div>

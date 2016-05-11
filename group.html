@@ -2,45 +2,82 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Log in</title>
+    <title>Groups</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/pc.css" rel="stylesheet">
 </head>
-<body>
+<body style="overflow-y:hidden">
     <form name="loginForm">
-        <div class="context">
+        <div class="context" style="width:92%; height:550px; overflow-y:scroll">
             <h2>Choose Your Groups</h2>
             <input type="hidden" name="query" value="login" />
-            <section>
-                <p>
-                    <a href="http://codylindley.com/thickbox/images/plant1.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant1_t.jpg" alt="Plant 1" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant2.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant2_t.jpg" alt="Plant 2" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant3.jpg" title="leave blank, or add caption to title attribute" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant3_t.jpg" alt="Plant 3" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant4.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant4_t.jpg" alt="Plant 4" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant1.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant1_t.jpg" alt="Plant 1" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant2.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant2_t.jpg" alt="Plant 2" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant3.jpg" title="leave blank, or add caption to title attribute" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant3_t.jpg" alt="Plant 3" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant4.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant4_t.jpg" alt="Plant 4" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant1.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant1_t.jpg" alt="Plant 1" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant2.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant2_t.jpg" alt="Plant 2" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant3.jpg" title="leave blank, or add caption to title attribute" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant3_t.jpg" alt="Plant 3" /></a>
-                    &nbsp;
-                    <a href="http://codylindley.com/thickbox/images/plant4.jpg" title="add a caption to title attribute / or leave blank" class="thickbox" rel="gallery-plants"><img src="http://codylindley.com/thickbox/images/plant4_t.jpg" alt="Plant 4" /></a>
-                    &nbsp;
-                </p>
-                <input id="btnSubmit" type="button" onclick="loginSubmit();" value="Submit" />
+            <section style="width:43%; margin-right:20px; height:200px; " class="leftBlock">
+                <table>
+                    <tr>
+                        <td rowspan="2"><img style="width:100px;" src="http://pisces.bbystatic.com/image2/BestBuy_US/en_US/images/abn/2015/cam/pr/140509-di-dpt-cat-conv/140509-di-dept-topper-dslr.jpg;canvasHeight=288;canvasWidth=520" alt="Plant 1" /></td>
+                        <td style="padding-left:20px;">
+                            <h3>DSLR BAR</h3>
+                            <i class="fa fa-user" aria-hidden="true"></i>   600
+                            <i class="fa fa-file-o" aria-hidden="true" style="padding-left:20px;"></i>     320
+                        </td>
+                        <td><input type="checkbox" name="group" value="DSLR"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-left:20px;"><i class="fa fa-info-circle" aria-hidden="true"></i> DSLR BAR is a family for the people who are interested in Digital Cameras. Join our family and share your experience. Let's win the competition!</td>
+                    </tr>
+                </table>
             </section>
+            <section style="width:43%; margin-right:20px; height:200px; " class="leftBlock">
+                <table>
+                    <tr>
+                        <td rowspan="2"><img style="width:100px;" src="http://www.dutyfreeaddict.com/blog/wp-content/uploads/2015/04/Omega-Duty-Free.jpg" alt="Plant 1" /></td>
+                        <td style="padding-left:20px;">
+                            <h3>Watch Bar</h3>
+                            <i class="fa fa-user" aria-hidden="true"></i>   350
+                            <i class="fa fa-file-o" aria-hidden="true" style="padding-left:20px;"></i>     120
+                        </td>
+                        <td><input type="checkbox" name="group" value="DSLR"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-left:20px;"><i class="fa fa-info-circle" aria-hidden="true"></i> Are you interested in watch? Join us and share your experience. Let's hunt all deals!</td>
+                    </tr>
+                </table>
+            </section>
+            <section style="width:43%; margin-right:20px; height:200px; " class="leftBlock">
+                <table>
+                    <tr>
+                        <td rowspan="2"><img style="width:100px;" src="https://s-media-cache-ak0.pinimg.com/736x/8b/df/9a/8bdf9a181d1b265e426a4b299075ee89.jpg" alt="Plant 1" /></td>
+                        <td style="padding-left:20px;">
+                            <h3>Handbag Bar</h3>
+                            <i class="fa fa-user" aria-hidden="true"></i>   927
+                            <i class="fa fa-file-o" aria-hidden="true" style="padding-left:20px;"></i>     620
+                        </td>
+                        <td><input type="checkbox" name="group" value="DSLR"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-left:20px;"><i class="fa fa-info-circle" aria-hidden="true"></i> We forcus on handbag and accessories boutique dedicated to hunting luxury designer handbags and bags.</td>
+                    </tr>
+                </table>
+            </section>
+            <section style="width:43%; margin-right:20px; height:200px; " class="leftBlock">
+                <table>
+                    <tr>
+                        <td rowspan="2"><img style="width:100px;" src="http://s7d2.scene7.com/is/image/Drugstore/553071?wid=220&hei=220&op_sharpen=1" alt="Plant 1" /></td>
+                        <td style="padding-left:20px;">
+                            <h3>Beauty Room</h3>
+                            <i class="fa fa-user" aria-hidden="true"></i>   1224
+                            <i class="fa fa-file-o" aria-hidden="true" style="padding-left:20px;"></i>     1057
+                        </td>
+                        <td><input type="checkbox" name="group" value="DSLR"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-left:20px;"><i class="fa fa-info-circle" aria-hidden="true"></i> We are a leading group for prestige beauty products and provides a highly effective experience for hunting deals at price compitition. </td>
+                    </tr>
+                </table>
+            </section>
+            <input type="submit" value="Submit" />
         </div>
     </form>
 

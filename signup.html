@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/pc.css" rel="stylesheet">
 </head>
-<body>
+<body style="overflow-y:hidden">
     <form name="loginForm">
-        <div class="context">
+        <div class="context" style="width:92%; height:550px; overflow-y:auto">
             <h2>Sign up</h2>
             <input type="hidden" name="query" value="login" />
             <section>
                 <table width="100%">
                     <tr>
-                        <td style="width:80px">
+                        <td  style="width:110px">
                             <h4>
                                 Name:
                             </h4>
@@ -28,7 +28,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width:80px">
+                        <td>
                             <h4>
                                 Email:
                             </h4>
@@ -48,7 +48,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width:80px">
+                        <td>
                             <h4>
                                 Phone:
                             </h4>
@@ -57,8 +57,69 @@
                             <input style="width:100%" type="email" class="form-control" id="email" placeholder="Enter phone number: (xxx)-xxx-xxxx">
                         </td>
                     </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h4>
+                                Credit & Debit Cards
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>
+                                Card number:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            <input style="width:100%" type="email" class="form-control" id="email" placeholder="Enter bank card number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>
+                                Name on card:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            <input style="width:100%" type="email" class="form-control" id="email" placeholder="Enter the name on the bank card">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>
+                                Expiration date:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            <select>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </td>
+                    </tr>
                 </table>
-                <a href="group.html"><input id="btnSubmit" type="button" value="Next" /></a>
+                <a href="group.html" style="width:100px; display:block"><input id="btnSubmit" type="button" value="Next" /></a>
             </section>
         </div>
     </form>

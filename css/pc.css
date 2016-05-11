@@ -128,7 +128,9 @@ table {
         color: #005ece;
         text-decoration: none;
     }
-
+ul {    
+    list-style: none;
+}
 #locationInput {
     width: 400px;
 }
@@ -209,7 +211,8 @@ table {
 .context {
     padding: 20px;
     text-align: left;
-    margin: auto;
+    margin: auto;    
+    overflow-y:auto;
 }
 
 .longText {
