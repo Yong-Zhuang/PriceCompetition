@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Log in</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/pc.css" rel="stylesheet">
+</head>
+<body>
+    <form name="loginForm">
+        <div class="context">
+            <h2>Sign up</h2>
+            <input type="hidden" name="query" value="login" />
+            <section>
+                <table width="100%">
+                    <tr>
+                        <td style="width:80px">
+                            <h4>
+                                Name:
+                            </h4>
+                        </td>
+                        <td>
+                            <input style="width:90%" type="email" class="form-control" id="fname" placeholder="Enter first name">
+                        </td>
+                        <td>
+                            <input style="width:90%" type="email" class="form-control" id="lname" placeholder="Enter last name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:80px">
+                            <h4>
+                                Email:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            <input style="width:100%" type="email" class="form-control" id="email" placeholder="Enter email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>
+                                Password:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            <input style="width:100%" type="password" name="password" id="password" pattern="^(?=.*\d).{4,8}$" id="pwd" placeholder="Enter password" /><span class="error" id="error_password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:80px">
+                            <h4>
+                                Phone:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            <input style="width:100%" type="email" class="form-control" id="email" placeholder="Enter phone number: (xxx)-xxx-xxxx">
+                        </td>
+                    </tr>
+                </table>
+                <a href="group.html"><input id="btnSubmit" type="button" value="Next" /></a>
+            </section>
+        </div>
+    </form>
+
+</body>
+</html>
